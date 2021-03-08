@@ -66,10 +66,6 @@ export default function Weather() {
       </div>
     );
   } else {
-    return (
-        <div>
-        {form};
-   
-    </div>
-    );}
+    return form
+    }
 }
