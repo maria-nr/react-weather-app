@@ -1,17 +1,55 @@
 
 
-h3{
-font-size: 19px;
-
-color: grey;
+h3 {
+font-size: 10px;
+color: rgb(236, 231, 231);
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-max-width: 20px;
+max-width: 800px;
+padding-left: 40px;
+
+
 }
 
-.temp {
-    background-color: rgba(142, 178, 244, 0.564);
-   
-  border-radius: 30px 30px 30px 5px;
-  font-size: 19px;
+.container {
+    color: ivory;
+    background: linear-gradient(20deg, #306090 0%, #1D8CAF 100%);    
+    border-radius: 30px 0px 5px;
+    font-size: 19px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+img {
+    width: 10; 
+    height: 10; 
+    border-style: solid;
+    border-width: 0 100px 100px 100px;
+    border-radius: 60px;
+    border-color: transparent transparent #007bff transparent;
 
+}
+
+
+form {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button, input {
+    border-radius: 10px 10px 10px;
+    
+}
+
+button {
+    background: linear-gradient(20deg, #306090 0%, #1D8CAF 100%);
+    border-radius: 20px;
+}
+
+
+
+.form-control{
+    margin-right: 3px;
+    text-align: center;
+    align-content: center;
 }

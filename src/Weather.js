@@ -5,6 +5,8 @@ import {Col, Row, Container} from "react-bootstrap";
 import "./Weather.css";
 
 
+
+
 export default function Weather() {
   const [city, setCity] = useState("");
   const [message, setMessage] = useState(false);
@@ -35,41 +37,39 @@ export default function Weather() {
 
   let form = (
     <form onSubmit={handleSubmit}>
-      <input
+      <input className="form-control"
         type="search"
         placeholder="Write your city"
         onChange={changeCity}
       />
-      <input type="submit" placeholder="Search" />
+      <button variant="info" type="submit" className="btn btn-info" placeholder="Search"> Search</button> 
+        
     </form>
   );
-
   if (message) {
     return (
-      <div>
+      <div >
         {form}
         <br />
-        <Container >
-    <Row className="country">
-    <Col><h1>{weather.name}</h1></Col>
-    </Row>
-    <Row>
-    
+   <h1 className="details">{weather.name}</h1>
     <Col><img src={weather.icon} alt={weather.description} /></Col>
-  </Row>
-  <div className="temp">
+  <Container className="temp" >
+  <div >
   <Row >
-  
-  <h3>Temperature:</h3> {Math.round(weather.temperature)} ºC </Row>
+  <h3>Temperature: {Math.round(weather.temperature)} ºC</h3>  </Row>
   <br />
-    <Row><h3>Humidity:{" "} </h3> {weather.humidity} % </Row>  <br />
-    <Row><h3>Description: </h3>{" "} {weather.description} </Row>  <br />
-    <Row><h3>wind: </h3>{weather.wind}km/h </Row>
+    <Row><h3>Humidity:{" "}{weather.humidity} %</h3> </Row>  <br />
+    <Row><h3>Description: {weather.description} </h3>  </Row>  <br />
+    <Row><h3>Wind: {weather.wind}km/h </h3></Row>
     </div>
 </Container>
       </div>
     );
   } else {
-    return form;
-  }
+    return (
+        <div>
+        {form};
+   
+    </div>
+    );}
 }
