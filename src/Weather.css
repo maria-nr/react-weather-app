@@ -21,10 +21,6 @@ padding-left: 40px;
 img {
     width: 10; 
     height: 10; 
-    border-style: solid;
-    border-width: 0 100px 100px 100px;
-    border-radius: 60px;
-    border-color: transparent transparent #007bff transparent;
 
 }
 
