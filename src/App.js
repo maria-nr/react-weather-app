@@ -5,9 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-  
       <Form />
-    </div>
+      <small> <a href="https://github.com/maria-nr/react-weather-app">Open-source code</a>by Maria Narvaez</small>
+      </div>
   );
 }
 
